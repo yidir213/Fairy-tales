@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/rlay"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:background="@drawable/img">
+
+    <ImageView
+        android:id="@+id/pause_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/ln"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/baseline_play_arrow_24" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imga" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:drawableEnd="@drawable/ic_baseline_east_24"
+        android:visibility="gone"
+        android:radius="20dp"
+        android:background="@drawable/bg_btnsuiv"
+    />
+
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <com.example.projecttp.outils.CustomScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="35dp"
+            android:fillViewport="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/storyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:lineSpacingExtra="8dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="Once upon a time, there were three best friends named Lily, Max, and Sam. They loved to play together and explore the world around them. One day, they decided to go on an adventure to find a hidden treasure.
+They packed their backpacks with snacks, water, and a map that they had found in the attic. The map showed a path through the forest, across a river, and up a mountain. They set off early in the morning, excited to see what they would find.
+As they walked through the forest, they saw many different animals and plants. They saw squirrels jumping from tree to tree, birds singing in the branches, and colorful flowers blooming on the ground. They stopped to take pictures and admire the beauty of nature"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </com.example.projecttp.outils.CustomScrollView>
+    </LinearLayout>
+</RelativeLayout>
+
+<!--essaie avec imagebutton-->
+<!--<ImageButton-->
+<!--android:id="@+id/button"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_margin="30dp"-->
+<!--android:layout_alignParentBottom="true"-->
+<!--android:layout_alignParentEnd="true"-->
+
+<!--android:visibility="gone"-->
+<!--android:background="@drawable/bg_btnsuiv"-->
+<!--app:srcCompat="@drawable/ic_baseline_east_24"-->
+<!--app:tint="@color/black"-->
+<!--android:backgroundTint="@color/teal_200"/>-->

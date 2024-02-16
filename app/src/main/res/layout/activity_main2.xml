@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/material_dynamic_neutral100"
+        android:drawableStart="@drawable/retour1"
+        android:paddingLeft="15dp"
+        android:paddingRight="18dp"
+        android:text="@string/retour"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retour"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Histoire 1"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_Scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre"
+        android:layout_marginTop="10dp"
+        android:foregroundGravity="center"
+        android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
